@@ -1,0 +1,130 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+label {
+    font-size: 1.4rem;
+}
+
+.controls, .results {
+    flex: 1;
+}
+
+form p:nth-of-type(1) {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+article p {
+    font-size: 1.8rem;
+    line-height: 1.2;
+}
+
+article div.keywords {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+}
+
+nav {
+    margin-bottom: 50px;
+}
+
+.prev {
+    float: left;
+}
+
+.next {
+    float: right;
+}
+
+article {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    display: flex;
+    max-height: fit-content;
+}
+
+article > div {
+    flex: 1;
+    max-height: 100%;
+}
+
+img {
+    margin-left: 20px;
+    object-fit: cover;
+    width: 25%;
+    max-height: 189px;
+    align-self: center;
+}
+
+.tag {
+    background-color: #ccc;
+    padding: 5px;
+    margin: 5px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.content {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+.color-green {
+    color: green;
+}
+
+.color-red {
+    color: red;
+}
+
+.ticker-container {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.ticker-content {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+@keyframes ticker {
+from {
+    transform: translateX(100%);
+}
+to {
+    transform: translateX(-800%);
+}
+}
+
+@media (max-width: 800px) { 
+    html {
+        font-size: 8px;
+    }
+}

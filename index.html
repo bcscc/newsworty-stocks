@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js" defer></script>
+    <link href="style.css" rel="stylesheet">
+  </head>
+<body>
+  <h1>Stocks in the News</h1>
+
+  <div class="wrapper">
+
+    <div class="controls">
+      <form>
+        <label for="select">Select</label>
+        <select name="select" id="select" class="select" required>
+          <option value="business">business</option>
+          <option value="science">science</option>
+          <option value="technology">technology</option>
+          <option value="us">us</option>
+          <option value="world">world</option>
+        </select>
+        <button class="submit">Submit search</button>
+      </form>
+    </div>
+
+    <div class="ticker-container">
+        <div class="ticker-content"></div>
+    </div>
+
+    <div class="results">
+        <section></section>
+    </div>
+
+  </div>
+
+</body>
+</html>
